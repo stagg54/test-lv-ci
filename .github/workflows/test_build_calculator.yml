@@ -1,10 +1,10 @@
 name: CI - Test&Build
-on: [ push,  pull_request, workflow_dispatch ]
+on: [ push,  workflow_dispatch ]
 
 jobs:
   build:
     permissions: write-all
-    runs-on: LV20x64
+    runs-on: [ self-hosted, LV20x64 ]
     steps:
       - uses: actions/checkout@v3
       - name: Test g-cli
