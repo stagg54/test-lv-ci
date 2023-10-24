@@ -3,7 +3,6 @@ on: [ push,  workflow_dispatch ]
 
 jobs:
   build:
-    permissions: write-all
     runs-on: [ self-hosted, LV20x64 ]
     steps:
       - uses: actions/checkout@v3
